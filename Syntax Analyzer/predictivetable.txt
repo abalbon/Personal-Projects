@@ -1,0 +1,11 @@
+string predictiveTable[6][9] =
+  { "Error",  "id",     "+",      "-",      "*",     "/",     "(",      ")",     "$",
+    "E",      "TE'",    "Error",  "Error",  "Error", "Error", "TE'",    "Error", "Error",
+    "E'",     "Error",  "+TE'",   "-TE'",   "Error", "Error", "Error",  "Eps",   "Eps",
+    "T",      "FT'",    "Error",  "Error",  "Error", "Error", "FT'",    "Error", "Error",
+    "T'",     "Error",  "Eps",    "Eps",    "*FT'",  "/FT'",  "Error",  "Eps",   "Eps",
+    "F",      "id",     "Error",  "Error",  "Error", "Error", "(E)",    "Error", "Error"};
+
+   vector<char> parserStack;    // Stack for my predictive parser
+   parserStack.push('$');
+   parserStack.push('E');       // push the starting symbol

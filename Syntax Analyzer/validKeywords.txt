@@ -1,0 +1,15 @@
+int
+float
+bool
+if
+else
+then
+do
+while
+whileend
+do
+doend
+for
+and
+or
+function
